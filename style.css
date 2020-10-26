@@ -1,0 +1,88 @@
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation h2{
+    margin-bottom: 0px;
+}
+
+.presentation h3{
+    margin-top: 0px;
+}
+
+.user_interation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user_interation label{
+    font-weight: bold;
+}
+
+.user_interation #userinput{
+    height: 25px;
+    width: 200px;
+    margin: 8px 0px;
+    border-radius: 10px;
+}
+
+.user_interation #sendButton{
+    width: 200px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.user_interation #sendButton:hover{
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.user_interation #sendButton:active{
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.result div{
+    display: flex;
+    flex-direction: row;
+}
+
+.result > div > p{
+    margin-left: 8px;
+    display: contents;
+}
+
+.result > div > label{
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+.result img {
+    margin-top: 30px;
+}
+
+.error_message{
+    justify-content: center;
+}

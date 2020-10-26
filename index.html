@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao AJAX</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="presentation">
+        <h2>Github Data</h2>
+        <h3>This page was created just to demonstrate the use of Ajax.</h3>
+    </div>
+    
+    <div class="user_interation">
+        <label>Username</label>
+        <input id="userinput" type="text" placeholder="Github username" />
+        <input id="sendButton" type="button" value="Search">
+    </div>
+    <hr />
+
+    <div class="result" style="display: none;">
+        <div id="forId">
+            <label id="idLabel">ID:</label><p id="id"></p>
+        </div>
+
+        <div id="forLogin">
+            <label id="loginLabel">Username:</label><p id="login"></p>
+        </div>
+
+        <div id="forBio">
+            <label id="bioLabel">Bio:</label><p id="bio"></p>
+        </div>
+
+        <div id="forUrl">
+            <label id="urlLabel">Github page:</label><p id="url"></p>
+        </div>
+        
+        <img id="myimage"/>
+    </div>
+
+    <div class="error_message" style="display: none;">
+        <h3>User not found. Try a valid username.</h3>
+    </div>
+    
+</body>
+</html>
